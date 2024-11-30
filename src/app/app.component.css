@@ -1,0 +1,169 @@
+/* CSS para el componente de Registro */
+.register-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #214461;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+/* CSS para el componente de Login */
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.login-container a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #214461;
+  text-decoration: none;
+}
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+/* CSS para el componente del Tablero */
+.board-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+.board-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+.column {
+  flex: 1;
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+.column h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.task {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #214461;
+  border-radius: 3px;
+  background-color: #e9ecef;
+}
+.logout {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.logout:hover {
+  background-color: #a71d2a;
+}
+
+/* General Layout */
+.mt-20 {
+  margin-top: 20px;
+}
+.layout-column {
+  display: flex;
+  flex-direction: column;
+}
+.layout-row {
+  display: flex;
+  flex-direction: row;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+/* Card Styles */
+.card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 20%;
+}
+.card-text h4 {
+  margin: 0;
+}
+
+/* Task List */
+.ul.styled {
+  list-style: none;
+  padding: 0;
+}
+.li-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons button {
+  margin: 0 5px;
+}
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:disabled {
+  background: #ccc;
+}
+button i {
+  font-size: 16px;
+}

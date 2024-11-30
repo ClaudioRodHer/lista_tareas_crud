@@ -1,0 +1,25 @@
+<!-- Board Component -->
+<app-board>
+    <div class="board-container">
+      <h2>My Board</h2>
+      <div class="columns">
+        <div class="column">
+          <h3>Backlog</h3>
+          <div class="task" *ngFor="let task of backlogTasks">{{ task }}</div>
+        </div>
+        <div class="column">
+          <h3>To Do</h3>
+          <div class="task" *ngFor="let task of todoTasks">{{ task }}</div>
+        </div>
+        <div class="column">
+          <h3>Ongoing</h3>
+          <div class="task" *ngFor="let task of ongoingTasks">{{ task }}</div>
+        </div>
+        <div class="column">
+          <h3>Done</h3>
+          <div class="task" *ngFor="let task of doneTasks">{{ task }}</div>
+        </div>
+      </div>
+      <button class="logout" (click)="onLogout()">Log Out</button>
+    </div>
+  </app-board>

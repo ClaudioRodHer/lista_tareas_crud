@@ -1,0 +1,38 @@
+<div class="mt-20 layout-column justify-content-center align-items-center">
+  <!-- Formulario para crear tareas -->
+  <section class="mt-50 layout-row align-items-center justify-content-center">
+    <input id="create-task-input" type="text" class="large" placeholder="New task name" [(ngModel)]="newTaskName" />
+    <button type="button" class="ml-30" (click)="addTask()">
+      Create task
+    </button>
+  </section>
+
+  <!-- Tablero de tareas -->
+  <div class="mt-50 layout-row">
+    <div *ngFor="let tasks of stagesTasks; let i = index" class="card outlined ml-20 mt-0">
+      <div class="card-text">
+        <h4>{{ stagesNames[i] }}</h4>
+        <ul class="styled mt-50">
+          <li *ngFor="let task of tasks" class="slide-up-fade-in">
+            <div class="li-content layout-row justify-content-between align-items-center">
+              <span>{{ task.name }}</span>
+              <div class="icons">
+                <button class="icon-only x-small mx-2" (click)="moveTaskBack(task)" [disabled]="task.stage === 0">
+                  <i class="material-icons">arrow_back</i>
+                </button>
+
+                <button class="icon-only x-small mx-2" (click)="moveTaskForward(task)" [disabled]="task.stage === 3">
+                  <i class="material-icons">arrow_forward</i>
+                </button>
+
+                <button class="icon-only danger x-small mx-2" (click)="deleteTask(task)">
+                  <i class="material-icons">delete</i>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

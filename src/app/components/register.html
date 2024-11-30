@@ -1,0 +1,25 @@
+  <!-- Register Component -->
+  <app-register>
+    <div class="register-container">
+      <h2>Nuevo Usuario</h2>
+      <form (ngSubmit)="onRegister()">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre" placeholder="Ingrese su nombre">
+        </div>
+        <div class="form-group">
+          <label for="usuario">Usuario</label>
+          <input type="text" id="usuario" name="usuario" [(ngModel)]="usuario" placeholder="Ingrese su usuario">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" [(ngModel)]="password" placeholder="Ingrese su password">
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirmar Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword" placeholder="Confirme su password">
+        </div>
+        <button type="submit">Registrarme</button>
+      </form>
+    </div>
+  </app-register>
